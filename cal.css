@@ -1,0 +1,24 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+div{
+	width:170px;
+}
+
+#div2{
+	top:60px;
+	left:100px;
+	position: absolute;
+}
+
+input[type = "button"]{
+	width:30px;
+	margin-right: 5px;
+}
+
+input[type = "text"]{
+	width: 148px;
+	text-align: right;
+}

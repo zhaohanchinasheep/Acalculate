@@ -22,3 +22,9 @@ input[type = "text"]{
 	width: 148px;
 	text-align: right;
 }
+
+input[type = "button"]:hover{
+	background-color:white;
+	border:1px soild;
+}
+

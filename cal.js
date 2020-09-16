@@ -11,22 +11,22 @@ function init(){
 				var btn_num = this.value;
 				switch(btn_num){ // switch语句：switc(表达式){case(n): 代码块；break;case(m):代码块；break;}
 					case("+"):
-						btn_num1 = parseInt(num.value);
+						btn_num1 = Number(num.value);
 						num.value = 0;
 						fh = "+";
 						break;
 					case("-"):
-						btn_num1 = parseInt(num.value);
+						btn_num1 = Number(num.value);
 						num.value = 0;
 						fh = "-";
 						break;
 					case("*"):
-						btn_num1 = parseInt(num.value);
+						btn_num1 = Number(num.value);
 						num.value = 0;
 						fh = "*";
 						break;
 					case("/"):
-						btn_num1 = parseInt(num.value);
+						btn_num1 = Number(num.value);
 						num.value = 0;
 						fh = "/";
 						break;
@@ -36,23 +36,29 @@ function init(){
 					case("<-"):
 						num.value = back(num.value)
 						break;	
+					case("AC"):
+						num.value = "0"
+						break;	
+					case("+/-"):
+						num.value = Number(num.value)*-1
+						break;	
 					case("="):
 						switch(fh){
 							case("+"):
-								num.value = btn_num1 + parseInt(num.value);
+								num.value = btn_num1 + Number(num.value);
 								break;
 							case("-"):
-								num.value = btn_num1 - parseInt(num.value);
+								num.value = btn_num1 - Number(num.value);
 								break;
 							case("*"):
-								num.value = btn_num1 * parseInt(num.value);
+								num.value = btn_num1 * Number(num.value);
 								break;
 							case("/"):
 								if(num.value === "0"){
 									num.value = 0;
 									alert("0不能做除数");
 								}else{
-									num.value = btn_num1 / parseInt(num.value);
+									num.value = btn_num1 / Number(num.value);
 								}
 								break;
 						}

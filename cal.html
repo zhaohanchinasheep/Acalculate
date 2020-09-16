@@ -3,9 +3,10 @@
 <head>
 	<title>Acalculate</title>
 	<script type="text/javascript" src = "cal.js"></script>
+	<script type="text/javascript" src = "caltools.js"></script>
 	<link rel="stylesheet" type="text/css" href="cal.css">
 </head>
-<body onload="init()">
+<body onload="init(),init_tool()">
 	<div id = "div1">
 		<div id = "div2">
 			<input type="text" id="num"><br>
@@ -28,7 +29,7 @@
 			<input type="button" id="n17" value="0">
 			<input type="button" id="n18" value=".">
 			<input type="button" id="n19" value="=">
-			<input type="button" id="n20" value="m"><br>
+			<input type="button" id="tool" value="tool"><br>
 
 			
 		</div>
